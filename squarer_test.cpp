@@ -1,6 +1,7 @@
 // squarer_test.cpp
 // Glenn G. Chappell
-// 2024-09-27
+// Started: 2024-09-27
+// Updated: 2024-10-02
 //
 // For CS 471 Fall 2024
 // Test suite for class Squarer
@@ -24,9 +25,12 @@ TEST_CASE( "Squarer gives correct results for int" )
     int expected = 25;
     CHECK(sq(param) == expected);
 
+    {
     param = -3;
     expected = 9;
+    INFO("Test calling sq on a negative value");
     CHECK(sq(param) == expected);
+    }
 
     param = 0;
     expected = 0;
