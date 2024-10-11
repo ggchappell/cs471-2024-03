@@ -1,7 +1,7 @@
 // pps_main.cpp
 // Glenn G. Chappell
 // 2024-10-04
-// Simple main program for prettyPrintString
+// Simple main program for prettyPrintSquare
 // Requires pps.hpp
 
 #include "pps.hpp"
