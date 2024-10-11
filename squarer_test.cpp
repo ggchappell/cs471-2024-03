@@ -25,7 +25,7 @@ TEST_CASE( "Squarer gives correct results for int" )
     int expected = 25;
     CHECK(sq(param) == expected);
 
-    {
+    {  // Make a scope, so INFO doesn't leak to next assertion
     param = -3;
     expected = 9;
     INFO("Test calling sq on a negative value");
